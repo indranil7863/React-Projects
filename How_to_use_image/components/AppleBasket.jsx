@@ -1,0 +1,24 @@
+import Basket from "./Basket";
+import LeftImage from "../assets/images/leftbutton.png";
+import RightImage from "../assets/images/rightbutton.png";
+import "./appbasket.css";
+import Button from "./Button";
+console.log(LeftImage);
+const AppleBasket = () => {
+  return (
+    <div id="container">
+      <Basket appleCnt="10" basketName="basket-1" isFull={1} />
+      <Button
+        title="left-arrow"
+        imgLink="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAb1BMVEX///8eIB0ABwAABQAAAACfn56jpKIbHRrDw8MZHBjMzMzAwcAbHhrExcQDCQDS0tIVGBQKDgi4ubjl5eVxcnEQEw/29vbe396ur66YmJdeX13Z2di1trUlJyRRUlFlZmRERkQ5Ozg0NjN4eXhTVFLuQuL+AAADfUlEQVR4nO2dbU/bQBCE/XLFdvxSO06CAwQI9P//xiaASiDjVqrOWt3cPN8jzeh2vbt3ji9JhBBCCCGEEEIIIYQQQgghhBBC/AfjtN9Po7WK5Rg3znWdc3f31koWYlUN6Rtb92CtZRFKV6QfFK60VrMA9afBNK0OO2s93qmzC4Np6iZrQb5p3ReDaf9orcgz3w2eFtFakl/qK4NkDr/l4NvTdLAW5ZPyegXT7ZO1Ko8gg6mrrWX5o86Bwf7ZWpY/StdcG6yGW2td3oAhWnU/rXV5A5SJ8wqurHV5A5QJLoMwRIucx+B1q3ZeQaccDIYyQ2WiIzLIXiawwZzHIH2ZaFGrVjgegzhEM6IQZS8T9DmIW7WM3KBatYAoc7VqYYNDlMkge5mAAy9Tq4YnerVq4UCfg2rVQqeGnQxViCKDRBu/atVCJ9IyQd+qMW38qlULHJyD9FsWTDmI3pOptkwrqMOXsFGZCB3692T4J3r2HNThS+jgEGWqg+xlgv7wRa1a6NDnoA5fQqeGA++BxyCc6NP+6eZHwEzt7sIgCNGzxSxknHOb8e8Gw2d4LwX3AwpRDqrh/Cg59tY6FqQ/JsnaWatYFLdONsxLeFrETfLC+ph5p3hJrCUszYF+DY/JZmstYlG2r/TP0pK8Hm4f33oa3kzs+1vqvrTpio/5D+6xpefZIg+Y02zx+md+atGR9mk+nG4C5qG9/JRTiSwWKc+MH8FmcBwWO7QZRXSsFsE7UHEEKn5NqLXW5ZGyQ6s4MFmMIlD5LaJDNrJcxEWDyWIMgYosNlyBCotGRmURByqTxZlA5cpF/gYO1cWGKhcjeKLO1EUqi+ijcw3V99bhm25NzmQxhkDFFom+gzzTwHFZxKvIlYuwu4nAIlOgwj9bcllU0WCghMc2VBZhA8dlcSZQVTSCoo62gWOyGEHRaNFfaAu3ttblkZmiwWQxhkDFm4xMqzhTNKgsKhcJgA0cWS7CYxsqi7CBa8gClX8V8bENk0V8bENlcaZoyGJQzDRwTLdyx9vAcVmEUz/TX1HwXbJHa1k+wfcBM8UpvtP5zlqVV9C93J21KL/Q360OikbD5vDKYv/LWpF3vuWim6wF+edLLlaH3b9/ERwXRYPr4PSTVTN8FMOMabq4ZNw413XO3d1bK1mOcdrvp9FahRBCCCGEEEIIIYQQQgghhBBCRMtv7PxEggm3iH4AAAAASUVORK5CYII="
+      />
+      <Button
+        title="right-arrow"
+        imgLink="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAaVBMVEX///8eIB0AAAAABQAABwCfn56jpKIbHRoZGxjR0dG9vr3Nzc3S0tIRFA/CwsIcHxt1dnUTFRGwsK+pqqm2t7bf39+XmJfq6upQUU8iJCAqLCkKDgdFRkQ3OTby8/Ly8vFcXVtpaWg6Ozkgv1bJAAADJElEQVR4nO2d0XKbMBREhUyNYhJiIMaxcZwm//+RdVJPC+XyVobR0Z5nP2hHe3VXIAvnhBBCCCGEEEIIIYQQQgghhBBCrMOh7brmuPYolqN89b7Pvd9TNW59nX3Tnx7XHssiNL7I7gT/sPZoFuCY/xGYZQVRYpdnA8JTufaA/jvnIhtJzHG16LMxhYdJvP6rMCtymFEnCm+1yFpuLmEqkbWittNJhDWN63k6iVmBahoPvphKDD1pFitLIqtp7GyJJKOaElkBzpaICnDJ1mLPNyoqwM2sqCSJM7VIkmjPYgJNoyetqMk2DdSuP9WmEVBGTbYWFeDiIgGjphrgQs2vRQW4uEg2wNX85QZl1FSbhnb9kZFs0+DXYgpNQ69t4kK7fgIKcARmAhxeogJcZNhG3fCNmkCAQxk12VpEnWScCXCkWUzAqKkGuBSahgJcXCTbNBKoRZRRE6jFKjwbEke7/veq+REx7U/j/0TDAHf88N7nMWMJHBi18r35g/i5B7jSqlMIIRxuCt/sKWZQX5x7Mf7XCMLv3Ee99iAWpd67N6OVgCje3GntMSzL88l9clfSL25zuH9aexCLcqvDHX4tdRfyYvrVD91jz235vzONK3NuLi0He4tNxMzuLf7uEK9Vs42Ymf0h6HFUZQkknbLZeeshBujhvimQdLPNC/2iCfxfFfDHam2Lgt49mQJJJ/jxF/bYM4ivQdAZRXsGUVEtSYviBYLaxMwqihdItyhoR4+PamlaFC+Q1CYaelTDW9ScwZDTBYJqUFEtdmyLgqKa2kTs2BbFCwS1CbsGQS9fbIF4i9KjGmlHP2NRvEC4RUlRraVHtYZ+Tqaln5MxLUqKauYMFhuOQHybsGsQ1Sam+mBRzRJItyheIOmcjF2DoKhmC0RZ1BAYQLd42QJBbWLGoniBHIua91uQotr1ZH1LFtQm3Bb/PeDP6RSyBJrf5QZZ1Ln39L6tDrPojfO4V5BevtzpcnANfnPMi6FFeQJHz9dID36HbP399oP+xPn32Zjy1fs+935/XHsky3Fou64B6xNCCCGEEEIIIYQQQgghhBBCiCX5BYzlRU8VdfcMAAAAAElFTkSuQmCC"
+      />
+      <Basket appleCnt="0" basketName="basket-2" isFull={0} />
+    </div>
+  );
+};
+
+export default AppleBasket;
